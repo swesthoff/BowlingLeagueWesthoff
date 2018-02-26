@@ -26,27 +26,19 @@ public class Team {
 	
 	
 	public Team() {
-		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Team(int teamId, String teamName, String teamType, String preferredNight) {
-		super();
-		this.teamId = teamId;
-		this.teamName = teamName;
-		this.teamType = teamType;
-		this.preferredNight = preferredNight;
-		
-		
+	
+	public Team(String teamName) {
+		this.setTeamName(teamName);
 	}
-	
-	
 	
 	public Team(String teamName, String teamType, String preferredNight) {
-		super();
 		this.teamName = teamName;
 		this.teamType = teamType;
-		this.preferredNight = preferredNight;
+		this.preferredNight = preferredNight;	
 	}
+	
 	public int getTeamId() {
 		return teamId;
 	}
@@ -72,8 +64,6 @@ public class Team {
 		this.preferredNight = preferredNight;
 	}
 	
-	
-	@Override
 	public String toString() {
 		return "Team [teamId=" + teamId + ", teamName=" + teamName + ", teamType=" + teamType + ", preferredNight="
 				+ preferredNight + "]";
