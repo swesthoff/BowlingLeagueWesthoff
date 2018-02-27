@@ -28,21 +28,21 @@ public class TeamHelper {
 
 	}
 	
-<<<<<<< HEAD
-	
-	
-	public List<Team> showAllTeams() {
-		// TODO Auto-generated method stub
-		EntityManager em = emfactory.createEntityManager();
-		// creates the query but does not execute it.
-		TypedQuery<Team> allResults = em.createQuery("Select list_item from Team list_item", Team.class);
-		// Selects the info
-		List<Team> allTeams = allResults.getResultList();
-		// need to close the entity manager
-		em.close();
 
-		return allTeams;
-	}
+	
+//	
+//	public List<Team> showAllTeams() {
+//		// TODO Auto-generated method stub
+//		EntityManager em = emfactory.createEntityManager();
+//		// creates the query but does not execute it.
+//		TypedQuery<Team> allResults = em.createQuery("Select list_item from Team list_item", Team.class);
+//		// Selects the info
+//		List<Team> allTeams = allResults.getResultList();
+//		// need to close the entity manager
+//		em.close();
+//
+//		return allTeams;
+//	}
 
 	
 	public void deleteTeam(Team toDelete) {
@@ -72,7 +72,7 @@ public class TeamHelper {
 		return foundTeam;
 	}
 	
-=======
+
 	public List<Team> showAllTeams() {
 		EntityManager em = emfactory.createEntityManager();
 		TypedQuery<Team> allResults = em.createQuery("select t from Team t", Team.class);
@@ -94,5 +94,5 @@ public class TeamHelper {
 			return null;
 		}
 	}
->>>>>>> e5a3d9dd5132ee0bf78c1626d7d71f8d49e3c021
+
 }

@@ -39,7 +39,7 @@ public class addPlayerServlet extends HttpServlet {
 		PlayerHelper ph = new PlayerHelper();
 		if(th.findTeamByName(teamName)==null) {
 			team = new Team(teamName);
-			th.insertItem(team);
+			th.insertTeam(team);
 		}else {
 			team = th.findTeamByName(teamName);
 		}

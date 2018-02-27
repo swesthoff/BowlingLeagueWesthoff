@@ -44,11 +44,11 @@ public class addTeamServlet extends HttpServlet {
 			
 			Team team = new Team(teamName, teamType, preferredNight);
 			TeamHelper dao = new TeamHelper();
-<<<<<<< HEAD
-			dao.insertTeam(li);
-=======
-			dao.insertItem(team);
->>>>>>> e5a3d9dd5132ee0bf78c1626d7d71f8d49e3c021
+
+			dao.insertTeam(team);
+
+	//		dao.insertItem(team);
+
 
 			getServletContext().getRequestDispatcher("/addTeam.html").forward(request, response);
 			// doGet(request, response);
