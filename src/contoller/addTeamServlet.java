@@ -44,7 +44,7 @@ public class addTeamServlet extends HttpServlet {
 			
 			Team li = new Team(teamName, teamType, preferredNight);
 			TeamHelper dao = new TeamHelper();
-			dao.insertItem(li);
+			dao.insertTeam(li);
 
 			getServletContext().getRequestDispatcher("/addTeam.html").forward(request, response);
 			// doGet(request, response);
