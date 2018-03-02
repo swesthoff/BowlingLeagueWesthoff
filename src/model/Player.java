@@ -92,7 +92,7 @@ public class Player {
 
 	public String toString() {
 		return "Player [playerId=" + playerId + ", firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber="
-				+ phoneNumber + ", screenName=" + screenName + "]";
+				+ phoneNumber + ", screenName=" + screenName + "team: " + team + "]";
 	}
 	
 	

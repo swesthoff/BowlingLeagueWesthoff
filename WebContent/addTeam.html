@@ -6,15 +6,32 @@
 </head>
 <body>
 <form action="addTeamServlet" method="post">
-		TeamName: <input type="text" name="teamName"> <br />
-		TeamType: <input type="text" name="teamType"><br />
-		PreferredNight: <input type="text" name="preferredNight"><br />
-		
-		<input type="submit"
-			value="Add Team">
-	</form>
+
+		Team Name: <input type="text" name="teamName"><br /> Team
+		Type: <select name="teamType">
+			<option value=null></option>
+			<option value=Soccer>Soccer</option>
+			<option value=Basketball>Basketball</option>
+			<option value=Baseball>Baseball</option>
+			<option value=Football>Football</option>
+			<option value=Volleyball>Volleyball</option>
+			<option value=Tennis>Tennis</option>
+		</select><br /> Preferred Night: <select name="preferredNight">
+			<option value=Monday>Monday</option>
+			<option value=Tuesday>Tuesday</option>
+			<option value=Wednesday>Wednesday</option>
+			<option value=Thursday>Thursday</option>
+			<option value=Friday>Friday</option>
+			<option value=Saturday>Saturday</option>
+			<option value=Sunday>Sunday</option>
+		</select> <input type="submit" value="Add Team"> <br /> <br />
+	
+</form>	
+	
+	
 	<a href="index.html"> Back to Home</a> <br />
 	<a href = "addPlayer.html">Add a Player</a> <br />
 	<a href="viewAllTeamsServlet">View complete Team list</a>
+	<a href="viewAllPlayerssServlet">View complete Player list</a>
 </body>
 </html>

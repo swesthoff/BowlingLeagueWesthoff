@@ -50,7 +50,7 @@ public class TeamHelper {
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
 		TypedQuery<Team> typedQuery = em.createQuery(
-				"select li from Team li where li.id = :selectedId",
+				"select li from Team li where li.teamId = :selectedId",
 				Team.class);
 		typedQuery.setParameter("selectedId", toDelete.getTeamId());
 		typedQuery.setMaxResults(1);

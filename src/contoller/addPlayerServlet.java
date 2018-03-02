@@ -44,7 +44,7 @@ public class addPlayerServlet extends HttpServlet {
 			team = th.findTeamByName(teamName);
 		}
 		Player player = new Player(firstName, lastName, phoneNumber, screenName, team);
-		ph.insertItem(player);
+		ph.insertPlayer(player);
 		getServletContext().getRequestDispatcher("/index.html").forward(request, response);
 		
 	}
